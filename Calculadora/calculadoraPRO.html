@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mi calculadora</title>
+	<link rel="stylesheet" type="text/css" href="css/PROstyle.css">
+</head>
+<body>
+	<div class="calculator">
+            <div id="pantalla">
+                <input type="text" id="result" disabled>
+            </div>
+                <div class="keypad">
+                    <button onclick="limpiar()">C</button>
+                    <button onclick="borrar()">DEL</button>
+                    <button onclick="dividir()">/</button>
+                    <button onclick="multiplicar()">x</button>
+                    <button onclick="restar()">-</button>
+                    <button onclick="sumar()">+</button>
+                    <button class="numero">1</button>
+                    <button onclick="agregarDigito('2')">2</button>
+                    <button onclick="agregarDigito('3')">3</button>
+                    <button onclick="agregarDigito('4')">4</button>
+                    <button onclick="agregarDigito('5')">5</button>
+                    <button onclick="agregarDigito('6')">6</button>
+                    <button onclick="agregarDigito('7')">7</button>
+                    <button onclick="agregarDigito('8')">8</button>
+                    <button onclick="agregarDigito('9')">9</button>
+                    <button onclick="agregarDigito('0')">0</button>
+                    <button onclick="agregarDigito('.')">.</button>
+                    <button onclick="calcular()">=</button>
+                </div>
+        </div>
+		
+	<script src="js/scriptPRO.js"></script>
+</body>
+</html>

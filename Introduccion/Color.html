@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ejemplo de página web con JavaScript</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+		}
+		h1 {
+			text-align: center;
+		}
+		button {
+			background-color: #4CAF50;
+			color: white;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+	<h1>Bienvenido a mi página web</h1>
+	<p>Esta es una página web sencilla que utiliza JavaScript para agregar interactividad y mejorar la experiencia del usuario.</p>
+	<p>Haz clic en el botón de abajo para cambiar el color de fondo de la página:</p>
+	<button onclick="cambiarColor()">Cambiar color de fondo</button>
+	<script>
+		function cambiarColor() {
+			var body = document.querySelector("body");
+			var colorActual = body.style.backgroundColor;
+			if (colorActual === "white") {
+				body.style.backgroundColor = "lightblue";
+			} else {
+				body.style.backgroundColor = "white";
+			}
+		}
+	</script>
+</body>
+</html>

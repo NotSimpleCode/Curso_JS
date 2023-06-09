@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Mi curso</title>
+</head>
+<body>
+	<header>
+		<h1>Mi curso de HTML y JavaScript</h1>
+		<nav>
+			<ul>
+				<li><a href="#tema1">Tema 1</a></li>
+				<li><a href="#tema2">Tema 2</a></li>
+				<li><a href="#tema3">Tema 3</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section id="tema1">
+			<h2>Tema 1: Introducción a HTML</h2>
+			<p>En este tema aprenderás los conceptos básicos de HTML.</p>
+			<button onclick="mostrarContenido()">Mostrar contenido</button>
+			<div id="contenido-tema1" style="display:none;">
+				<p>Contenido del tema 1...</p>
+			</div>
+		</section>
+		<section id="tema2">
+			<h2>Tema 2: Introducción a JavaScript</h2>
+			<p>En este tema aprenderás los conceptos básicos de JavaScript.</p>
+			<button onclick="mostrarContenido()">Mostrar contenido</button>
+			<div id="contenido-tema2" style="display:none;">
+				<p>Contenido del tema 2...</p>
+			</div>
+		</section>
+		<section id="tema3">
+			<h2>Tema 3: Proyecto final</h2>
+			<p>En este tema trabajarás en un proyecto final utilizando HTML y JavaScript.</p>
+			<button onclick="mostrarContenido()">Mostrar contenido</button>
+			<div id="contenido-tema3" style="display:none;">
+				<p>Contenido del tema 3...</p>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<p>Derechos de autor © 2023 Mi empresa. Todos los derechos reservados.</p>
+	</footer>
+	<script>
+		function mostrarContenido() {
+			var boton = event.target;
+			var contenido = boton.nextElementSibling;
+			if (contenido.style.display === "none") {
+				contenido.style.display = "block";
+				boton.innerHTML = "Ocultar contenido";
+			} else {
+				contenido.style.display = "none";
+				boton.innerHTML = "Mostrar contenido";
+			}
+		}
+	</script>
+</body>
+</html>

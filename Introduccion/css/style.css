@@ -1,0 +1,20 @@
+
+
+.btn-red{
+    width: 400;
+    height: 40;
+    color: red;
+    border-radius: 30;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.btn-green{
+    width: 100;
+    height: 40;
+    color: green;
+    border-radius: 30;
+    font-style: italic;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}

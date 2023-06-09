@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" \>
+        <meta http-equiv="X-UA-Compatible" content="IE-edge" \>
+        <title>Linterna JS</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/style.css">
+        
+    </head>
+
+    <body>
+        <div class="container">
+            <center>
+                <img id="imagen" src="img/apagar.png" alt="" width="400" height="300">
+            </center>
+        </div>
+        <div>
+            <center>
+                <button onclick="ON()" class="btn btn-red" id="ON">ENCENDER</button>
+                <button onclick="OFF()" class="btn btn-green" id="OFF">APAGAR</button>
+            </center>
+        </div>
+        <center>
+            <div class="bloque1">
+                <label for="numero1">ingrese el primer numero</label><br>
+                <input type="number" id="numero1"><br>
+            </div>
+            <div class="bloque2">
+                <label for="numero2">ingrese el segundo numero</label><br>
+                <input type="number" id="numero2">
+            </div>
+            <p id="sumando"></p>
+        </center>
+        
+    </body>
+
+    <script>
+        function ON(){
+            x = document.getElementById("numero1").value;
+            y = document.getElementById("numero2").value;
+            document.getElementById("imagen").src = "img/encender.png";
+            suma = parseFloat(x) + parseFloat(y);
+            text = suma;
+            document.getElementById("sumando").innerHTML = "La suma de los numeros es : " + text;
+        }
+        function OFF(){
+            x = document.getElementById("numero1").value;
+            y = document.getElementById("numero2").value;
+            document.getElementById("imagen").src = "img/encender.png";
+            resta = parseFloat(x) - parseFloat(y);
+            text = resta;
+            document.getElementById("imagen").src = "img/apagar.png";
+            document.getElementById("sumando").innerHTML = "La resta de los numeros es : " + text;
+        }
+    </script>
+
+    
+
+</html>

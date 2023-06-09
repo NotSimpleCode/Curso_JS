@@ -1,0 +1,78 @@
+/* Estilos para la pantalla de la calculadora */
+#pantalla {
+    font-size: 2.5em;
+    text-align: right;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Estilos para los botones de la calculadora */
+  button {
+    background-color: #fff;
+    color: #333;
+    font-size: 1.5em;
+    padding: 10px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  button:hover,
+  button:focus {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  button:active {
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.3) inset;
+  }
+  
+  /* Estilos para los botones de operación */
+  button.operacion {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  button.operacion:hover,
+  button.operacion:focus {
+    background-color: #e0e0e0;
+  }
+  
+  button.operacion:active {
+    background-color: #ccc;
+  }
+  
+  /* Estilos para el botón de igual */
+  button.igual {
+    background-color: #00c853;
+    color: #fff;
+  }
+  
+  button.igual:hover,
+  button.igual:focus {
+    background-color: #00b248;
+  }
+  
+  button.igual:active {
+    background-color: #009e3e;
+  }
+  
+  /* Estilos para el botón de borrar */
+  button.borrar {
+    background-color: #ff7043;
+    color: #fff;
+  }
+  
+  button.borrar:hover,
+  button.borrar:focus {
+    background-color: #ff5c00;
+  }
+  
+  button.borrar:active {
+    background-color: #e65100;
+  }
+  
